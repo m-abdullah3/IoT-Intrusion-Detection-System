@@ -1,6 +1,5 @@
-# IoT-Intrusion-Detection-System
+IoT Intrusion Detection System
 A comprehensive machine learning-based intrusion detection system designed specifically for IoT network environments. This project implements and compares multiple ML algorithms to detect various cyber attacks including DDoS, MITM, and malware injection using the CIC IoT Dataset 2023.
-
 Project Overview
 This project develops a multi-class classification system capable of identifying various attack types in IoT network traffic. By leveraging machine learning algorithms including Random Forest, Multi-Layer Perceptron (MLP), K-Nearest Neighbors (KNN), and Support Vector Machine (SVM), the system provides robust intrusion detection capabilities tailored for IoT environments.
 The implementation includes comprehensive data preprocessing, feature selection, hyperparameter tuning, and performance evaluation to ensure optimal detection accuracy and reliability.
@@ -16,19 +15,32 @@ Visualization: Confusion matrices, ROC curves, and performance comparison charts
 
 Project Structure
 iot-intrusion-detection-ml/
+
 ├── Data-Analysis.py          # Exploratory data analysis and visualization
+
 ├── Preprocessing-Data.py     # Data cleaning and preprocessing pipeline
+
 ├── FeatureSelection.py       # Correlation analysis and feature selection
+
 ├── PCA.py                   # Principal Component Analysis implementation
+
 ├── KNN.py                   # K-Nearest Neighbors classifier
+
 ├── MLP.py                   # Multi-Layer Perceptron classifier
+
 ├── RandomForest.py          # Random Forest classifier
+
 ├── svm.py                   # Support Vector Machine classifier
+
 ├── Tune-KNN.py              # KNN hyperparameter tuning
+
 ├── Tuning-MLP.py            # MLP hyperparameter tuning
 ├── Tunning-RF.py            # Random Forest hyperparameter tuning
+
 ├── Tunning-SVM.py           # SVM hyperparameter tuning
+
 └── README.md
+
 Installation & Setup Instructions
 Prerequisites
 
@@ -100,9 +112,7 @@ random_search = RandomizedSearchCV(
     cv=5,
     scoring='accuracy'
 )
-Results
-Model Performance Comparison
-AlgorithmAccuracyPrecisionRecallF1-ScoreRandom Forest99.2%99.1%99.2%99.1%MLP98.7%98.6%98.7%98.6%KNN97.8%97.9%97.8%97.8%SVM96.5%96.3%96.5%96.4%
+
 Key Findings
 
 Random Forest achieved the highest overall performance with 99.2% accuracy
